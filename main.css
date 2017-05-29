@@ -3676,19 +3676,6 @@ div.screen-content {
     height: 100%;
   }
 
-  .confirm-layout-left {
-    position: fixed;
-    top: 0px;
-    bottom: 0px;
-    width: 33.33%;
-    background-color: #1fd05f;
-    background-image: url('../images/olivia-top-bg.png'), -webkit-linear-gradient(315deg, #1fd05f, #1fd18a);
-    background-image: url('../images/olivia-top-bg.png'), linear-gradient(135deg, #1fd05f, #1fd18a);
-    background-position: 50% 50%, 0px 0px;
-    background-size: 70%, auto;
-    background-repeat: no-repeat, repeat;
-  }
-
   .confirm-layout-right {
     position: absolute;
     right: 0px;
@@ -3709,26 +3696,6 @@ div.screen-content {
   .why-graphic {
     height: 100px;
     margin-bottom: 20px;
-  }
-
-  .why-graphic.why-graphic-messages {
-    position: relative;
-    display: block;
-    width: 30px;
-    height: 59px;
-    margin-right: 35px;
-    margin-left: auto;
-    float: left;
-    clear: both;
-    background-image: url('images/iphone_thumbnail.png');
-    background-position: 50% 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  .why-graphic.why-graphic-messages.why-graphic-money {
-    background-image: url('images/iphone_thumbnail.png');
-    background-size: contain;
   }
 
   .why-graphic-messaging-inside {

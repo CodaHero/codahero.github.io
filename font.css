@@ -1,0 +1,50 @@
+/*--
+    custom heading
+--*/
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.heading {
+  text-align: center;
+  color: #777777;
+  padding-bottom: 70px; }
+  .heading h2 {
+    color: #3c3c3c;
+    padding-bottom: 15px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 40px; }
+  .heading p {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 300; }
+
+.promo-details {
+  padding: 100px 0;
+  background: #4c97ff; }
+  .promo-details h2 {
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    text-align: center; }
+  .promo-details h4 {
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 8px; }
+  .promo-details p {
+    color: #000;
+    font-size: 18px; }
+
+.pricing-details {
+  padding: 100px 0;
+}
+
+.feature-box {
+  padding-bottom: 30px;
+}

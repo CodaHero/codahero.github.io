@@ -40,329 +40,198 @@
 
 <body>
 
-
-  <div id="top" class="w-section section full-section">
-    <!-- Navigation bar  -->
-    <div class="home-top-brand">
-      <div class="home-top-brand-inner">
-        <div data-collapse="medium" data-animation="default" data-duration="400" data-doc-height="1" data-no-scroll="1" class="w-nav navbar-top">
-          <a href="#top" class="w-nav-brand w-clearfix brand navbar-brand"><img alt="CodaHero Logo" width="100" src="images/school.png" class="logo-image navbar-logo-image top bigger">
-            <div class="bubble small-bubble small-bubble-shadow show">
-              <div class="chat-text exposed brand-name">CodaHero</div>
-              <div class="brand-byline">Now anyone can teach coding</div>
-            </div>
-          </a>
-          <nav role="navigation" class="w-nav-menu nav-menu">
-            <a href="#why-codahero" data-ix="hover-footer-link" class="w-inline-block nav-link top-nav-link">
-                <div>Why CodaHero</div>
-                <div class="link-rule"></div>
-            </a>
-            <a href="#how-codahero-works" data-ix="hover-footer-link" class="w-inline-block nav-link top-nav-link">
-                <div>How CodaHero Works</div>
-                <div class="link-rule"></div>
-            </a>
-            <a href="mailto:hello@codahero.com" target="_blank" data-ix="hover-footer-link" class="w-inline-block nav-link top-nav-link">
-                <div>Contact Us</div>
-                <div class="link-rule"></div>
-            </a>
-            <a href="#buy-codahero" data-ix="hover-footer-link" class="w-inline-block nav-link top-nav-link">
-                <div>Buy Now</div>
-                <div class="link-rule"></div>
-            </a>
-          </nav>
-          <div class="w-nav-button menu-button">
-            <div class="w-icon-nav-menu"></div>
-          </div>
+  <section class="bg-intro">
+    <br>
+<!--     <h2>CodaHero</h2> -->
+    <nav class="home-navbar">
+      <ul>
+        <li><a href="#">Lessons Package</a></li>
+        <li><a href="#">MasterClass</a></li>
+        <li><a href="#">Newsletters</a></li>
+        <li><a class="" href="#">Get Lesson Plans</a></li>
+      </ul>
+    </nav>
+    <div class="col-md-8 offset-md-2">
+      <div class="card text-center">
+        <img class="card-img-top" src="images/lesson-folder.png" width="250" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Get engaging coding lesson plans for your class</h4>
+          <p class="card-text">See how we can help you start coding class in less than 10 minutes</p>
+          <!-- mailchimp -->
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Bubble welcoming chats -->
-    <div class="">
-      <div class="col-lg-6">
-        <img alt="CodaHero" width="900" src="images/codahero_platform.png" />
-      </div>
-      <div class="col-lg-6">
-        <div class="section top-section" id="chat-text-container">
-          <script type="text/javascript">
-            function enableBubbleText(index) {
-              document.getElementById("inner-chat-text-" + index).style.display = "inline";
-            }
-            function updateBubbleText() {
-              var text1Width = document.getElementById("chat-text-1").offsetWidth / document.getElementById("chat-text-container").offsetWidth;
-              var text2Width = document.getElementById("chat-text-2").offsetWidth / document.getElementById("chat-text-container").offsetWidth;
-              var text3Width = document.getElementById("chat-text-3").offsetWidth / document.getElementById("chat-text-container").offsetWidth;
-              if (text1Width > 0.75) {
-                enableBubbleText(1);
-              }
-              if (text2Width > 0.84) {
-                enableBubbleText(2);
-              }
-              if (text3Width > 0.83) {
-                enableBubbleText(3);
-              }
-              if (text1Width > 0.75 && text2Width > 0.84 && text3Width > 0.83) {
-                clearInterval(animationInterval);
-              }
-            }
-            var animationInterval = setInterval(updateBubbleText, 100);
-          </script>
-          <div class="w-clearfix chat-container">
-            <div data-ix="reveal-chat-text" class="bubble" id="chat-text-1">
-              <div class="chat-text"><div id="inner-chat-text-1" style="display:none">
-                  Hi! I provide Scratch practice exercises</div>
-              </div>
-            </div>
-            <div data-ix="reveal-chat-text-2" class="bubble" id="chat-text-2">
-              <div class="w-clearfix typing">
-                <div data-ix="ellipsis-1" class="ellipsis-1"></div>
-                <div data-ix="ellipsis-3" class="ellipsis-1"></div>
-                <div data-ix="ellipsis-2" class="ellipsis-1"></div>
-              </div>
-              <div class="chat-text"><div id="inner-chat-text-2" style="display:none">
-                  So now anyone can teach coding
-                </div></div>
-            </div>
-            <div data-ix="reveal-chat-text-3" class="bubble" id="chat-text-3">
-              <div class="w-clearfix typing">
-                <div data-ix="ellipsis-1" class="ellipsis-1"></div>
-                <div data-ix="ellipsis-3" class="ellipsis-1"></div>
-                <div data-ix="ellipsis-2" class="ellipsis-1"></div>
-              </div>
-              <div class="chat-text"><div id="inner-chat-text-3" style="display:none">
-                  Enter your e-mail to try CodaHero in your next class
-                </div></div>
-            </div>
-            <div data-ix="reveal-chat-text-3" class="bubble bubble-3">
-              <div class="w-clearfix typing">
-                <div data-ix="ellipsis-1" class="ellipsis-1"></div>
-                <div data-ix="ellipsis-3" class="ellipsis-1"></div>
-                <div data-ix="ellipsis-2" class="ellipsis-1"></div>
-              </div>
-              <div class="chat-text">Be the first to see how great I am!</div>
-            </div>
-          </div>
-
-          <div class="section answer-section">
-            <div class="answer-section-inner">
-              <div data-ix="remove-user-replying-label" class="chat-label user-chat-label">Replying to CodaHero...</div>
-              <div id= "mc_embed_signup" class="w-form w-clearfix form-wrapper">
-                <form action="//github.us14.list-manage.com/subscribe/post?u=915f7cb7cc06380553b902872&amp;id=bcfdaf281f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                    <input id="email" type="email" placeholder="What's your email?" name="EMAIL" data-name="Email" required="required" autofocus="autofocus" class="w-input input">
-                    <input type="submit" value="Try Now" name="subscribe" id="mc-embedded-subscribe" data-wait="Confirming..." wait="Confirming..." class="w-button button">
-                </form>
-                <div id="mce-responses" class="impactwise-response">
-                  <div class="w-form-done" id="mce-success-response">
-                      <p>Thank you! Your submission has been received!</p>
-                  </div>
-                  <div class="w-form-fail" id="mce-error-response">
-                      <p>Oops! Something went wrong while submitting the form</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
+  <div id="" class="statistics">
+    <div class="container">
+      <h2 class="description">We make improvements across key areas</h2>
+      <div class="row text-center">
+        <div class="col-md-3">
+          <p class="number">2x</p>
+          <p class="description">Higher Student Engagement</p>
+        </div>
+        <div class="col-md-3">
+          <p class="number">Increased</p>
+          <p class="description">Exposure to digital technology</p>
+        </div>
+        <div class="col-md-3">
+          <p class="number">40%</p>
+          <p class="description">Improved teaching confidence</p>
+        </div>
+        <div class="col-md-3">
+          <p class="number">32%</p>
+          <p class="description">Better understandings of fundamentals</p>
         </div>
       </div>
-  </div>
+    </div>
   </div>
 
-  <div id="why-codahero" class="w-section main-section main-section-how section">
+  <div class="info-section">
+    <div class="container">
+      <div class="col-md-8">
+        <h2>What's in our lesson plans?</h2>
+        <br>
+        <div class="card card-outline-warning">
+          <div class="card-block">
+            1. Introduction and demo videos that inspire creativity
+          </div>
+        </div>
+        <div class="card card-outline-warning">
+          <div class="card-block">
+            2. Step by step guide to run classes for projects and unplugged activities
+          </div>
+        </div>
+        <div class="card card-outline-warning">
+          <div class="card-block">
+            3. Codes for completed project/work
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <br>
+        <img src="images/lesson-unwrap.png" class="mx-auto img-fluid" alt="clipboard"/>
+      </div>
+    </div>
+  </div>
+
+  <div class="promo-details text-center">
+    <h2>Learner Centric Lesson Plans</h2>
+    <p>CodaHero is building a better match making engine of lesson plans for teachers</p>
+    <p>We give you lesson plans that match your students coding experience. We also make sure there are lesson plans for any schools with different available equipments</p><br>
+  </div>
+
+<!--   <div id="why-codahero" class="w-section main-section main-section-how section">
     <div class="container">
         <div class="row">
             <div class="heading">
-                <h2>Why CodaHero</h2>
+                <h2>Featured Lessons</h2>
+                <p>These are the lesson plans that had been used and worked well in <br> engaging students in other schools. Try these out in your school today!</p>
+                <p>All lesson plans come with completed project/work, ready made slide shows, videos that inspire creativity and unplugged activities.</p>
             </div>
             <div class="col-md-4">
-                <div class="feature-box">
-                    <img src="images/icons/Checkmark.png" height="40" alt="">
-                    <h4>One concept at a time</h4>
-                    <p>We separate projects based on Scratch concepts (see image attached)</p>
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Dress Up Game</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <ul>
+                    <li>Equipment: iPads/ Laptops</li>
+                    <li>Experience: No prior experience required</li>
+                  </ul>
+                  <a href="#" class="btn btn-primary">View lesson plans</a>
                 </div>
-                <div class="feature-box">
-                    <img src="images/icons/Scratch-Block.png" height="40" alt="">
-                    <h4>Limited Blocks</h4>
-                    <p>We narrow down Scratch blocks that are necessary for each question</p>
-                </div>
-                <div class="feature-box">
-                    <img src="images/icons/Checkered-Flag.png" height="40" alt="">
-                    <h4>Different Interests, Common Goal</h4>
-                    <p>We have a wide range of projects for kids with different interests</p>
-                </div>
+              </div>
             </div>
-            <div class="col-md-8 text-center">
-                <img src="images/scripts-to-topics.png" width="600" alt="">
+            <div class="col-md-4">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Beautiful Art and Patterns</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <ul>
+                    <li>Equipment: iPads/Laptops</li>
+                    <li>Experience: No prior experience required</li>
+                  </ul>
+                  <a href="#" class="btn btn-primary">View lesson plans</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Burger MasterChef</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <ul>
+                    <li>Equipment: Laptops</li>
+                    <li>Experience: Beginners</li>
+                  </ul>
+                  <a href="#" class="btn btn-primary">View lesson plans</a>
+                </div>
+              </div>
             </div>
         </div>
       </div>
-  </div>
-
-  <div id="how-codahero-works" class="promo-details">
-    <div class="container">
-      <div class="row">
-          <div class="heading">
-              <h2>How CodaHero Works</h2>
-          </div>
-          <div class="col-md-4 col-sm-12 text-center">
-              <div class="feature-box">
-                  <img src="images/icons/Download.png" width="90" alt="">
-                  <h4>Download</h4>
-                  <p>Download CodaHero on your laptop</p>
-              </div>
-          </div>
-          <div class="col-md-4 col-sm-12 text-center">
-              <div class="feature-box">
-                  <img src="images/icons/Desktop.png" width="90" alt="">
-                  <h4>Log On</h4>
-                  <p>Students log on with their unique ID (no email required).</p>
-              </div>
-          </div>
-          <div class="col-md-4 col-sm-12 text-center">
-              <div class="feature-box">
-                  <img src="images/icons/Game-Controller.png" width="90" alt="">
-                  <h4>Have Fun!</h4>
-                  <p>You pick a concept that students should focus on, and let the students have fun learning</p>
-              </div>
-          </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="call-to-action bg-opacity bg-1">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 wow text-center">
-              <div class="block">
-                <!-- Begin MailChimp Signup Form -->
-                <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-                <div id="mc_embed_signup" class="block">
-                <form action="//github.us14.list-manage.com/subscribe/post?u=915f7cb7cc06380553b902872&amp;id=bcfdaf281f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                  <div class="block" id="mc_embed_signup_scroll">
-                      <h2 class="subheading">Get CodaHero</h2>
-                      <p for="mce-EMAIL">Enter your email to get CodaHero for your next class when we're ready. It's free to get an invitation to sign up!</p>
-                      <div class="col-lg-6 offset-lg-3">
-                          <div class="input-group">
-                            <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="Your Email Address Here" required>
-                            <span class="input-group-btn">
-                              <button class="btn btn-primary btn-main" type="button submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
-                            </span>
-                          </div><!-- /input-group -->
-                      </div><!-- /.col-lg-6 -->
-                  </div>
-                </form>
-                </div>
-                <!--End mc_embed_signup-->
-              </div>
-            </div>
-        </div>
-    </div>
-  </div>
-
-  <div id="buy-codahero" class="pricing-details">
-    <div class="container">
-        <div class="row">
-            <div class="heading">
-                <h2>Buy CodaHero</h2>
-                <p>You can also purchase our early bird package for your students to get a headstart.</p>
-            </div>
-            <div class="col-md-6 col-sm-12">
-                <div class="card card-outline-secondary mb-3">
-                    <div class="card-header text-center">
-                        <h2>Standard:</h2>
-                        <h2>AUD 5</h2>
-                        <p>per student per month, billed monthly</p>
-                    </div>
-                    <div class="card-block text-left">
-                        <p class="card-text">This includes all of these:</p>
-                        <ul>
-                          <li>Practice exercises created by other coding teachers and software developers</li>
-                          <li>Accounts for students to save their work</li>
-                        </ul>
-                        <div class="text-center">
-                          <button type="button" class="btn btn-primary" disabled>Primary button</button>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="col-md-6 col-sm-12">
-                <div class="card card-outline-primary mb-3">
-                    <div class="card-header text-center">
-                        <h2>Early Bird:</h2>
-                        <h2>AUD 1</h2>
-                        <p>per student per month, billed monthly</p>
-                    </div>
-                    <div class="card-block text-left">
-                        <p class="card-text">This includes all of these:</p>
-                        <ul>
-                          <li>Practice exercises created by other coding teachers and software developers</li>
-                          <li>Accounts for students to save their work</li>
-                        </ul>
-                        <div class="text-center">
-                          <a href="http://bit.ly/buy-codahero" class="btn btn-primary">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-  </div>
-
-  <div class="call-to-action bg-opacity bg-1">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 wow text-center">
-              <div class="block">
-                <!-- Begin MailChimp Signup Form -->
-                <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-                <div id="mc_embed_signup" class="block">
-                <form action="//github.us14.list-manage.com/subscribe/post?u=915f7cb7cc06380553b902872&amp;id=868a34e2cf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                  <div class="block" id="mc_embed_signup_scroll">
-                      <h2 class="subheading">Subscribe to our FREE unplugged + plugged lesson plans</h2>
-                      <p for="mce-EMAIL">Enter your email to get our weekly lesson plans for your next class</p>
-                      <div class="col-lg-6 offset-lg-3">
-                          <div class="input-group">
-                            <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="Your Email Address Here" required>
-                            <span class="input-group-btn">
-                              <button class="btn btn-primary btn-main" type="button submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
-                            </span>
-                          </div><!-- /input-group -->
-                      </div><!-- /.col-lg-6 -->
-                  </div>
-                </form>
-                </div>
-                <!--End mc_embed_signup-->
-              </div>
-            </div>
-        </div>
-    </div>
-  </div>
-
-<!--End mc_embed_signup-->
-
-<!--   <div id="how-she-survive" class="w-section main-section why-section">
-    <div class="section">
-      <div class="w-row">
-      <center>
-        <br>
-        <a href="http://bit.ly/subscribe-member" class="w-nav-link nav-link" target="_blank">Subscribe EARLY BIRD membership of $5.99/month</a>
-      </center>
-      </div>
-    </div>
   </div> -->
 
-  <div class="w-section main-section footer">
-      <div class="section footer-top-section">
-          <div class="w-row footer-row">
-              <div class="w-col w-col-8 footer-right-column">
-                  <div class="footer-list-heading">Copyright 2017, CodaHero</div>
+  <div class="call-to-action bg-opacity bg-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 wow text-center">
+              <div class="block">
+                <!-- Begin MailChimp Signup Form -->
+                <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+                <div id="mc_embed_signup" class="block">
+                <form action="//codahero.us16.list-manage.com/subscribe/post?u=5db921fc7d9bfd32a69f2531b&amp;id=626f3b3a94" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                  <div class="block" id="mc_embed_signup_scroll">
+                      <h2 class="subheading">Get your first coding lesson plan for FREE!</h2>
+                      <p for="mce-EMAIL">Enter your email below</p>
+                      <div class="col-lg-6 offset-lg-3">
+                          <div class="input-group">
+                            <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="Your Email Address Here" required>
+                            <span class="input-group-btn">
+                              <button class="btn btn-primary btn-main" type="button submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
+                            </span>
+                          </div><!-- /input-group -->
+                      </div><!-- /.col-lg-6 -->
+                  </div>
+                </form>
+                </div>
+                <!--End mc_embed_signup-->
               </div>
+            </div>
         </div>
-      </div>
+    </div>
   </div>
 
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+
+      <h3>Coda<span>Hero</span></h3>
+
+      <p class="footer-company-name">CodaHero &copy; 2017</p>
+    </div>
+
+    <div class="footer-center">
+    </div>
+
+    <div class="footer-right">
+
+      <p class="footer-company-about">
+        <span>About CodaHero</span>
+        CodaHero aims to help school teachers to start and continue to teach coding in Primary
+        and Secondary Schools with minimal effort.
+      </p><br>
+      <p><a href="mailto:hello@codahero.com">hello@codahero.com</a></p>
+
+    </div>
+
+  </footer>
+
   <script src="webflow.js"></script>
+  <script src="multisel.js"></script>
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

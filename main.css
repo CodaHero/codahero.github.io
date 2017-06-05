@@ -112,8 +112,8 @@ nav.home-navbar ul li a:hover:after {
 .statistics {
   width: 100%;
   background-color: #0d1c32;
-  height: 40vh;
-  padding-top: 50px;
+  height: 50vh;
+  padding-top: 30px;
 }
 
 .number {

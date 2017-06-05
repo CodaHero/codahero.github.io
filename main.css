@@ -70,10 +70,6 @@ nav.home-navbar ul li a {
   z-index: 1;
 }
 
-nav.home-navbar ul li a.call-to-action {
-  color: #000;
-}
-
 nav.home-navbar ul li a:hover {
   color: #fff;
 }

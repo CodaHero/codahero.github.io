@@ -70,7 +70,7 @@
   background-size: cover;
   color: #fff;
   position: relative; }
-  .call-to-action .block h2 {
+  .call-to-action .block .subheading {
     margin-bottom: 6px;
     color: #fff;
     padding-bottom: 0; }

@@ -1,295 +1,261 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-  <title>CodaHero -- Scratch Practice Exercises</title>
-  <!-- meta description -->
-  <meta property="og:type"               content="article" />
-  <meta property="og:url"                content="https://www.codahero.com" />
-  <meta property="og:title"              content="CodaHero" />
-  <meta property="og:description"        content="CodaHero -- Scratch Practice Exercises Separated by CS Concepts" />
-  <meta property="og:image"              content="https://codahero.github.io/images/codahero-banner.png"/>
-  <link rel="shortcut icon" type="image/x-icon" href="images/school-blue.png">
-  <link rel="apple-touch-icon" href="images/school-blue.png">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Air &mdash; Free Website Template, Free HTML5 Template by freehtml5.co</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+  <meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+  <meta name="author" content="freehtml5.co" />
 
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
-  <script type="text/javascript">
-    // Monkey-patch logic
-    var pageName = 'home';
-    var isCheckMyPlace = pageName === 'check-my-place' ? true : false;
-    var isUnsubscribe = pageName === 'unsubscribe' ? true : false;
+  <!-- Facebook and Twitter integration -->
+  <meta property="og:title" content=""/>
+  <meta property="og:image" content=""/>
+  <meta property="og:url" content=""/>
+  <meta property="og:site_name" content=""/>
+  <meta property="og:description" content=""/>
+  <meta name="twitter:title" content="" />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:url" content="" />
+  <meta name="twitter:card" content="" />
 
-    var isMobile = window.innerWidth <= 768 ? true : false;
-    var widthRatios = {
-      text1: isMobile ? 80 : (isUnsubscribe ? 45 : (isCheckMyPlace ? 65 : 85)),
-      text2: isMobile ? (isCheckMyPlace ? 80 : 40) : 61,
-      text3: isMobile ? 80 : 72
-    };
-  </script>
-  <!-- Sharing script -->
-  <script src="//load.sumome.com/" data-sumo-site-id="08f000898e91cf02eac3081f5902397d0b72e8da2f7941d77f24748986870155" async="async"></script>
+  <!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">    -->
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
   
-  <script src="//load.sumome.com/" data-sumo-site-id="de5b00f083f0ded88e4ce71f10f4b96b27febf43a7ce8b13798426af7ce29c3b" async="async"></script>
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- Icomoon Icon Fonts-->
+  <link rel="stylesheet" href="css/icomoon.css">
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Flexslider  -->
+  <link rel="stylesheet" href="css/flexslider.css">
 
-  <script type="text/javascript">var switchTo5x=true;</script>
-  <script type="text/javascript" src="https://ws.sharethis.com/button/buttons.js"></script>
-  <script type="text/javascript" src="https://ss.sharethis.com/loader.js"></script>
-  <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-  <script src="https://npmcdn.com/bootstrap@4.0.0-alpha.5/dist/js/bootstrap.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+  <!-- Theme style  -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
 
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="font.css">
-  <!-- Include third parties stylesheets -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
-</head>
+  <!-- Modernizr JS -->
+  <script src="js/modernizr-2.6.2.min.js"></script>
+  <!-- FOR IE9 below -->
+  <!--[if lt IE 9]>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
 
-<body>
-
-  <section class="bg-intro">
-    <br>
-    <nav class="home-navbar">
-      <ul>
-        <li><a href="#">Lessons Packs</a></li>
-        <li><a href="#">MasterClass</a></li>
-        <li><a href="#">Newsletters</a></li>
-        <li><a class="" href="#">Get Lesson Plans</a></li>
-      </ul>
-    </nav>
-    <div class="col-md-8 offset-md-2">
-      <div class="card text-center">
-        <img class="card-img-top" src="images/lesson-folder.png" width="250" alt="Card image cap">
-        <div class="card-block">
-          <h4 class="card-title">Get engaging coding lesson plans for your class</h4>
-          <p class="card-text">See how we can help you start coding class in less than 10 minutes</p>
-          <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-          <div id="mc_embed_signup" class="block">
-          <form action="//codahero.us16.list-manage.com/subscribe/post?u=5db921fc7d9bfd32a69f2531b&amp;id=626f3b3a94" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div class="block" id="mc_embed_signup_scroll">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="input-group">
-                      <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="Your Email Address Here" required>
-                      <span class="input-group-btn">
-                        <button class="btn btn-success" type="button submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Get Lesson Plan</button>
-                      </span>
-                    </div><!-- /input-group -->
-                </div><!-- /.col-lg-6 -->
-            </div>
-          </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div id="stats" class="statistics">
-    <div class="container">
-      <h2 class="description">We make improvements across key areas</h2>
-      <div class="row text-center">
-        <div class="col-sm-12 col-md-3">
-          <p class="number">2x</p>
-          <p class="description">Higher Student Engagement</p>
-        </div>
-        <div class="col-sm-12 col-md-3">
-          <p class="number">Increased</p>
-          <p class="description">Exposure to digital technology</p>
-        </div>
-        <div class="col-sm-12 col-md-3">
-          <p class="number">40%</p>
-          <p class="description">Improved teaching confidence</p>
-        </div>
-        <div class="col-sm-12 col-md-3">
-          <p class="number">32%</p>
-          <p class="description">Better understandings of fundamentals</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="info-section">
-    <div class="container">
-      <div class="col-sm-12 col-md-8">
-        <h2>What's in our lesson plans?</h2>
-        <br>
-        <div class="card card-outline-warning">
-          <div class="card-block">
-            1. Introduction and demo videos that inspire creativity
-          </div>
-        </div>
-        <div class="card card-outline-warning">
-          <div class="card-block">
-            2. Step by step guide to run classes for projects and unplugged activities
-          </div>
-        </div>
-        <div class="card card-outline-warning">
-          <div class="card-block">
-            3. Codes for completed project/work
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-4">
-        <br>
-        <img src="images/lesson-unwrap.png" class="mx-auto img-fluid" alt="clipboard"/>
-      </div>
-    </div>
-  </div>
-
-  <div class="promo-details text-center">
-    <div class="container">
-      <h2>Learner Centric Lesson Plans</h2>
-      <p>CodaHero is building a better match making engine of lesson plans for teachers</p>
-      <p>We give you lesson plans that match your students coding experience. We also make sure there are lesson plans for any schools with different available equipments</p><br>
-    </div>
-  </div>
-
-<!--   <div id="why-codahero" class="w-section main-section main-section-how section">
-    <div class="container">
-        <div class="row">
-            <div class="heading">
-                <h2>Featured Lessons</h2>
-                <p>These are the lesson plans that had been used and worked well in <br> engaging students in other schools. Try these out in your school today!</p>
-                <p>All lesson plans come with completed project/work, ready made slide shows, videos that inspire creativity and unplugged activities.</p>
-            </div>
-            <div class="col-md-4">
-              <div class="card" style="width: 20rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-block">
-                  <h4 class="card-title">Dress Up Game</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <ul>
-                    <li>Equipment: iPads/ Laptops</li>
-                    <li>Experience: No prior experience required</li>
-                  </ul>
-                  <a href="#" class="btn btn-primary">View lesson plans</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card" style="width: 20rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-block">
-                  <h4 class="card-title">Beautiful Art and Patterns</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <ul>
-                    <li>Equipment: iPads/Laptops</li>
-                    <li>Experience: No prior experience required</li>
-                  </ul>
-                  <a href="#" class="btn btn-primary">View lesson plans</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card" style="width: 20rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-block">
-                  <h4 class="card-title">Burger MasterChef</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <ul>
-                    <li>Equipment: Laptops</li>
-                    <li>Experience: Beginners</li>
-                  </ul>
-                  <a href="#" class="btn btn-primary">View lesson plans</a>
-                </div>
-              </div>
-            </div>
-        </div>
-      </div>
-  </div> -->
-
-  <div class="call-to-action bg-opacity bg-1">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 wow text-center">
-              <div class="block">
-                <!-- Begin MailChimp Signup Form -->
-                <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-                <div id="mc_embed_signup" class="block">
-                <form action="//codahero.us16.list-manage.com/subscribe/post?u=5db921fc7d9bfd32a69f2531b&amp;id=626f3b3a94" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                  <div class="block" id="mc_embed_signup_scroll">
-                      <h2 class="subheading">Get your first coding lesson plan for FREE!</h2>
-                      <p for="mce-EMAIL">Enter your email below</p>
-                      <div class="col-lg-6 offset-lg-3">
-                          <div class="input-group">
-                            <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="Your Email Address Here" required>
-                            <span class="input-group-btn">
-                              <button class="btn btn-primary btn-main" type="button submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
-                            </span>
-                          </div><!-- /input-group -->
-                      </div><!-- /.col-lg-6 -->
+  </head>
+  <body>
+      
+  <div class="fh5co-loader"></div>
+  
+  <div id="page">
+  <nav class="fh5co-nav" role="navigation">
+      <div class="top-menu">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xs-2">
+                      <div id="fh5co-logo"><a href="index.html">CodaHero<span>.</span></a></div>
                   </div>
-                </form>
-                </div>
-                <!--End mc_embed_signup-->
+                  <div class="col-xs-10 text-right menu-1">
+                      <ul>
+                          <li class="active"><a href="index.html">Home</a></li>
+                          <li class="btn-cta"><a href="#"><span>Get Lesson Plan</span></a></li>
+                      </ul>
+                  </div>
               </div>
-            </div>
-        </div>
+              
+          </div>
+      </div>
+  </nav>
+
+  <header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-color: #fff">
+      <div class="overlay"></div>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6 text-center">
+                  <div class="display-t js-fullheight">
+                      <div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
+                          <h1>Get engaging coding lesson plan for your next class</h1>
+                          <h2>Start coding class in less than 10 minutes. Made by developers in collaboration with teachers</h2>
+                          <p><a class="btn btn-primary btn-lg btn-learn" href="#fh5co-features">Learn More</a></p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6" style="position: relative">
+                <div class="login-wrap">
+                  <div class="login-html">
+                    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Get Lesson Plan</label>
+                    <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
+                    <div id="mc_embed_signup" class="login-form">
+                      <form action="//codahero.us16.list-manage.com/subscribe/post?u=5db921fc7d9bfd32a69f2531b&amp;id=626f3b3a94" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll" class="sign-in-htm">
+                          <div class="group">
+                            <label for="mce-EMAIL" class="label">Email</label>
+                            <input type="email" value="" name="EMAIL" class="required email input" id="mce-EMAIL">
+                          </div>
+                          <div class="group">
+                            <button class="button" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Get Lesson Plan</button>
+                          </div>
+                          <div class="hr"></div>
+                        </div>
+                      </form>
+                      <div class="sign-up-htm">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+  </header>
+
+  <div id="fh5co-features">
+      <div class="container">
+          <div class="services-padding">
+              <div class="row">
+                  <div class="col-md-4 animate-box">
+                      <div class="feature-left">
+                          <span class="icon">
+                              <i class="icon-hotairballoon"></i>
+                          </span>
+                          <div class="feature-copy">
+                              <h3>2x Higher Engagement</h3>
+                              <p style="color: #000; font-weight: 200">Higher student engagement is achieved by providing projects based demonstrations that students think are cool. </p>
+           <!--                    <p><a href="#">Learn More <i class="icon-arrow-right22"></i></a></p> -->
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-md-4 animate-box">
+                      <div class="feature-left">
+                          <span class="icon">
+                              <i class="icon-genius"></i>
+                          </span>
+                          <div class="feature-copy">
+                              <h3>Increase Technology Exposure</h3>
+                              <p style="color: #000; font-weight: 200">We offer a variety of projects that expose kids to the possibilities of technology and coding. Something that's more than game that appeals to both gender and students of all ages.</p>
+                             <!--  <p><a href="#">Learn More <i class="icon-arrow-right22"></i></a></p> -->
+                          </div>
+                      </div>
+
+                  </div>
+                  <div class="col-md-4 animate-box">
+                      <div class="feature-left">
+                          <span class="icon">
+                              <i class="icon-chat"></i>
+                          </span>
+                          <div class="feature-copy">
+                              <h3>Greater Teaching confidence</h3>
+                              <p style="color: #000; font-weight: 200">We provide support and teaching materials to boost teachers confidence. We give you the materials so you can focus on what you're good at</p>
+                             <!--  <p><a href="#">Learn More <i class="icon-arrow-right22"></i></a></p> -->
+                          </div>
+                      </div>
+                  </div>
+          </div>
+      </div>
     </div>
   </div>
 
-  <footer class="footer-distributed">
+  <div id="fh5co-slider">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6 animate-box">
+                  <div class="heading">
+                      <h2>What's in our lesson plans</h2>
+                      <p>We give you lesson plans that match your students coding experience. We also make sure there are lesson plans for any schools with different available equipments</p>
+                  </div>
+              </div>
+              <div class="col-md-6 col-md-push-1 animate-box">
+                  <aside id="fh5co-hero">
+                  <div class="flexslider">
+                      <ul class="slides">
+                      <li>
+                          <div class="overlay-gradient"></div>
+                          <div class="container-fluid">
+                            <div class="col-md-12 col-md-offset-0 col-md-pull-10 slider-text slider-text-bg">
+                                    <div class="desc">
+                                      <h2>Easy to digest + Comprehensive</h2>
+                                      <ol>
+                                        <p>1.  Introduction and demo videos that inspire creativity</p>
+                                        <p>2.  Step by step guide to run classes for projects and unplugged activities</p>
+                                        <p>3.  Codes for completed project/work</p>
+                                      </ol>
+                                </div>
+                            </div>
+                          </div>
+                      </li>
+                      </ul>
+                  </div>
+              </aside>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <div id="fh5co-started">
+      <div class="overlay"></div>
+      <div class="container">
+          <div class="row animate-box">
+              <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                  <h2>Try Us Out Today!</h2>
+                  <p>Enter your email to receive your first comprehensive lesson plan for FREE.</p>
+                  <p><a href="#fh5co-header" class="btn btn-default btn-lg">Get lesson plan</a></p>
+              </div>
+          </div>
+      </div>
+  </div>
 
-    <div class="footer-left">
+  <footer id="fh5co-footer" role="contentinfo">
+      <div class="container">
+          <div class="row row-pb-md">
+              <div class="col-md-4 fh5co-widget">
+                  <h4>CodaHero</h4>
+                  <p style="font-weight: 300;">CodaHero aims to help school teachers to start and continue to teach coding in Primary and Secondary Schools with minimal effort.</p>
+              </div>
+              <div class="col-md-2 col-md-push-1 fh5co-widget">
+              </div>
 
-      <h3>Coda<span>Hero</span></h3>
+              <div class="col-md-2 col-md-push-1 fh5co-widget">
+              </div>
 
-      <p class="footer-company-name">CodaHero &copy; 2017</p>
-    </div>
+              <div class="col-md-4 col-md-push-1 fh5co-widget">
+                  <h4>Contact Information</h4>
+                  <ul style="list-style: none; font-weight: 300; ">
+                      <li><a href="mailto:info@yoursite.com">hello@codahero.com</a></li>
+                  </ul>
+              </div>
 
-    <div class="footer-center">
-    </div>
+          </div>
 
-    <div class="footer-right">
+          <div class="row copyright">
+              <div class="col-md-12 text-center">
+                  <p>
+                      <small class="block">&copy; 2017 CodaHero Inc. All Rights Reserved.</small> 
+                  </p>
+              </div>
+          </div>
 
-      <p class="footer-company-about">
-        <span>About CodaHero</span>
-        CodaHero aims to help school teachers to start and continue to teach coding in Primary
-        and Secondary Schools with minimal effort.
-      </p><br>
-      <p><a href="mailto:hello@codahero.com">hello@codahero.com</a></p>
-
-    </div>
-
+      </div>
   </footer>
-  <script src="dropdown.js"></script>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  </div>
 
-    ga('create', 'UA-100092280-1', 'auto');
-    ga('send', 'pageview');
+  <div class="gototop js-top">
+      <a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+  </div>
+  
+  <!-- jQuery -->
+  <script src="js/jquery.min.js"></script>
+  <!-- jQuery Easing -->
+  <script src="js/jquery.easing.1.3.js"></script>
+  <!-- Bootstrap -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Waypoints -->
+  <script src="js/jquery.waypoints.min.js"></script>
+  <!-- Flexslider -->
+  <script src="js/jquery.flexslider-min.js"></script>
+  <!-- Main -->
+  <script src="js/main.js"></script>
 
-  </script>
-
-  <!-- MailChimp -->
-  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-  <!-- End of MailChimp -->
-
-    <!-- Start of Async Drift Code -->
-  <script>
-  !function() {
-    var t;
-    if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
-    t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-    t.factory = function(e) {
-      return function() {
-        var n;
-        return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
-      };
-    }, t.methods.forEach(function(e) {
-      t[e] = t.factory(e);
-    }), t.load = function(t) {
-      var e, n, o, i;
-      e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
-      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
-      n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
-    });
-  }();
-  drift.SNIPPET_VERSION = '0.3.1';
-  drift.load('mb8r4te6gxdv');
-  </script>
-  <!-- End of Async Drift Code -->
-
-</body>
+  </body>
 </html>
+
